@@ -4,7 +4,7 @@ This is a fork of the rogue captive portal code as it was the best capitve porta
 
 It sets up an AP, after which the flask instance on the main cosmic pi raspberry repo will serve the interface.
 
-Installation after a fresh install of Rasbian Jessie Lite:
+Installation after a fresh install of Rasbian Stretch Lite:
 ```
 sudo apt-get install git
 git clone https://github.com/CosmicPi/cosmic-captive
