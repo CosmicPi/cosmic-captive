@@ -13,7 +13,7 @@ chmod +x install.sh
 sudo ./install.sh
 sudo reboot
 ```
-Macchanger has been cut, since we don't need it.
+Macchanger, apache and php have been cut, since we don't need them.
 
 After reboot, look for an access point named "CosmicPi" Connecting to it from an Apple or Android device should automatically bring up a captive portal login screen.
 
