@@ -13,7 +13,7 @@ sudo systemctl stop dnsmasq
 sudo systemctl stop hostapd
 
 echo "Configuring components..."
-mv /etc/hostapd/hostapd.conf /etc/hostapd/hostapd.conf.orig
+#mv /etc/hostapd/hostapd.conf /etc/hostapd/hostapd.conf.orig
 cp -f hostapd.conf /etc/hostapd/
 mv /etc/dnsmasq.conf /etc/dnsmasq.conf.orig
 cp -f dnsmasq.conf /etc/
