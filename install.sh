@@ -6,7 +6,7 @@ if [ "$(id -u)" != "0" ]; then
 fi
 
 echo "Installing dependencies..."
-apt-get --yes --force-yes install hostapd dnsmasq
+apt-get --yes --allow install hostapd dnsmasq
 
 #stop the daemons
 sudo systemctl stop dnsmasq
