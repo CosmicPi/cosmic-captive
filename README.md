@@ -8,7 +8,7 @@ Installation after a fresh install of Rasbian Jessie Lite:
 ```
 sudo apt-get install git
 git clone https://github.com/CosmicPi/cosmic-captive
-cd rogue-captive
+cd cosmic-captive
 chmod +x install.sh
 sudo ./install.sh
 sudo reboot
