@@ -13,11 +13,15 @@ sudo systemctl stop dnsmasq
 sudo systemctl stop hostapd
 
 echo "Configuring components..."
+mv /etc/hostapd/hostapd.conf /etc/hostapd/hostapd.conf.orig
 cp -f hostapd.conf /etc/hostapd/
+mv /etc/dnsmasq.conf /etc/dnsmasq.conf.orig
 cp -f dnsmasq.conf /etc/
 mv /etc/dnsmasq.conf /etc/dnsmasq.conf.orig  
 cp -f dhcpcd.conf /etc/
-cp -f rc.local /etc/
+#cp -f rc.local /etc/
+sudo systemctl enable hostapd   
+sudo systemctl enable dnsmasq   
 
 echo "Non-rogue captive portal installed. Reboot to execute."
 exit 0
