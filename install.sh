@@ -18,8 +18,7 @@ cp -f hostapd /etc/default/hostapd
 cp -f hostapd.conf /etc/hostapd/
 mv /etc/dnsmasq.conf /etc/dnsmasq.conf.orig
 cp -f dnsmasq.conf /etc/
-mv /etc/dnsmasq.conf /etc/dnsmasq.conf.orig  
-cp -f dhcpcd.conf /etc/
+cp -f dhcpcdstatic.conf /etc/dhcpcd.conf
 #cp -f rc.local /etc/
 sudo systemctl enable hostapd   
 sudo systemctl enable dnsmasq   
