@@ -17,4 +17,6 @@ Macchanger, apache and php have been cut, since we don't need them.
 
 After reboot, look for an access point named "CosmicPi" Connecting to it from an Apple or Android device should automatically bring up a captive portal login screen.
 
+Note, if a network in wpa_supplicant is found, it will drop the AP and connect. If the external network fails, then the system will remain down until the external network comes back. Alternatively if rebooted it will create the access point again if in the absence of the external network.
+
 Credentials are no longer logged, as all http hosting (apache/php) has been removed and is covered by flask.
