@@ -8,18 +8,15 @@ fi
 echo "Installing dependencies..."
 apt-get --yes --force-yes install hostapd dnsmasq
 
+#stop the daemons
+sudo systemctl stop dnsmasq
+sudo systemctl stop hostapd
+
 echo "Configuring components..."
 cp -f hostapd.conf /etc/hostapd/
 cp -f dnsmasq.conf /etc/
-#cp -Rf html /var/www/
-#chown -R www-data:www-data /var/www/html
-#chown root:www-data /var/www/html/.htaccess
+cp -f dhcpcd.conf /etc/
 cp -f rc.local /etc/
-#cp -f override.conf /etc/apache2/conf-available/
-#cd /etc/apache2/conf-enabled
-#ln -s ../conf-available/override.conf override.conf
-#cd /etc/apache2/mods-enabled
-#ln -s ../mods-available/rewrite.load rewrite.load
 
 echo "Non-rogue captive portal installed. Reboot to execute."
 exit 0
