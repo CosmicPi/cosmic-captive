@@ -21,7 +21,8 @@ cp -f dnsmasq.conf /etc/
 cp -f dhcpcd.conf /etc/dhcpcd.conf
 #cp -f rc.local /etc/
 sudo systemctl enable hostapd   
-sudo systemctl enable dnsmasq   
+sudo systemctl enable dnsmasq
+sudo systemctl enable dhcpcd
 
 echo "Non-rogue captive portal installed. Reboot to execute."
 exit 0
