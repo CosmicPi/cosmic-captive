@@ -15,6 +15,7 @@ sudo systemctl stop hostapd
 echo "Configuring components..."
 cp -f hostapd.conf /etc/hostapd/
 cp -f dnsmasq.conf /etc/
+mv /etc/dnsmasq.conf /etc/dnsmasq.conf.orig  
 cp -f dhcpcd.conf /etc/
 cp -f rc.local /etc/
 
