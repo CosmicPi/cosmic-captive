@@ -3,7 +3,7 @@
 This is a fork of the rogue captive portal code as it was the best capitve portal I could find. Note that the original code wasn't licensed at the time of writing - this is an open issue: 
 https://github.com/braindead-sec/rogue-captive/issues/1
 
-It sets up an AP, after which the flask instance on the main cosmic pi raspberry repo will serve the interface.
+It sets up an AP, after which the flask instance on the main cosmic pi raspberry repo will serve the interface. Note that the IP address in this configuration is 10.0.0.1, not 192.168.12.1 as indicated on the front panel of the Cosmic Pi V1.5 units - this will be fixed in a future update of this repo.
 
 Installation after a fresh install of Rasbian Stretch Lite:
 ```
